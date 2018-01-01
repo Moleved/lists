@@ -61,7 +61,6 @@ public class Main extends Application {
                 lst = table.getSelectionModel().getSelectedItems();
                 values = new String[lst.size()];
                 lst.toArray(values);
-                table2.getItems().clear();
                 table2.getItems().addAll(values);
 
 
@@ -103,7 +102,7 @@ public class Main extends Application {
         pane.add(table2, 3, 0, 2, 3);
         pane.add(label, 0, 3);
 
-        primaryStage.setScene(new Scene(pane, 640, 480));
+        primaryStage.setScene(new Scene(pane, 800, 480));
         primaryStage.show();
     }
 
